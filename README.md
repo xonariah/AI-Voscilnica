@@ -1,9 +1,9 @@
-"# AI-Voscilnica" 
+# AI Vosščlnica
 
 za zagon vmesnika poženi sd_1.6/webui.user.bat - prvič traja dlje da se vse zdownloada.
 možn je da boš rabu še kej sam zdownloadat, ampak mislm da maš use (python git etc)
 
-TRACK NAREJENIH STVARI ZA pisanje SEMINARja:
+## TRACK NAREJENIH STVARI ZA pisanje SEMINARja:
 - webui.user.bat : 
 	- set COMMANDLINE_ARGS= --autolaunch --no-half-vae --no-half --medvram --opt-sdp-attention 
 - dodala modele v (so samo temp, da bo zadeva sploh laufala)
@@ -12,7 +12,7 @@ TRACK NAREJENIH STVARI ZA pisanje SEMINARja:
 	- models\VAE 
 
 
-CILJI: 
+## CILJI: 
 - redesign vmesnika, da bo bolj preprost za starejše ljudi: 
 	- odstraniti extras, png info, checkpoint manager, train, settings, extensions 
 	- nastaviti 2 modela za uporabo: 2d in 3d 
