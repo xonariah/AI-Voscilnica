@@ -31,6 +31,8 @@ možn je da boš rabu še kej sam zdownloadat, ampak mislm da maš use (python g
 - možnost generacije animacij: 
 	- velikost bo majhna zaradi preobremenitve grafičnih kartic 
 	- animacije bodo imele cca 8 fps in 1-2 sekunde 
-- če bi znala, narediti nek fiksen text čez zgenerirane slike (in animacije) 
+- če bi znala, narediti nek fiksen text čez zgenerirane slike (in animacije)
+	- napis teksta na voščilnico z uporabo chat gpt API?
 - javno dostopen url 
-- pošiljanje generiranih slik/animacij 
+- pošiljanje generiranih slik/animacij
+
