@@ -1,38 +1,34 @@
-# AI Vosščlnica
-
-za zagon vmesnika poženi sd_1.6/webui.user.bat - prvič traja dlje da se vse zdownloada.
-možn je da boš rabu še kej sam zdownloadat, ampak mislm da maš use (python git etc)
-
-## TRACK NAREJENIH STVARI ZA pisanje SEMINARja:
-- webui.user.bat : 
-	- set COMMANDLINE_ARGS= --autolaunch --no-half-vae --no-half --medvram --opt-sdp-attention 
-- dodala modele v (so samo temp, da bo zadeva sploh laufala)
-	- models\Stable-diffusion 
-	- embeddings 
-	- models\VAE 
+# AI Voščilnica
 
 
-## CILJI: 
-- redesign vmesnika, da bo bolj preprost za starejše ljudi: 
-	- odstraniti extras, png info, checkpoint manager, train, settings, extensions 
-	- nastaviti 2 modela za uporabo: 2d in 3d 
-	- astaviti možnost izbire stila (LORA) 
-	- odstraniti možnost negative prompt (ga vnaprej sama fiksno pripraviva) 
-	- fixen cfg=7, batch count=1, batch size=1 
-- dodati voice 2 text extension 
-	- v primeru, da je simpl, dodt tut image 2 text 
-- namesto izbire velikosti voščilnice, nastaviva izbiro med dvema (ležeča, pokončna) 
-- izbira tipa voščilnice: 
-	- možnost random generiranja (brez vnešenega teksta) 
-	- zraven vsakega generiranja se pod parametr samodejno doda 'greetings card' 
-	- za vsak tip se pod parametr ustrezno dodajo parametri, primer: 
-		- birthday card: birthday, cake, happy
-		- christmas: christmas, winter 
-- možnost generacije animacij: 
-	- velikost bo majhna zaradi preobremenitve grafičnih kartic 
-	- animacije bodo imele cca 8 fps in 1-2 sekunde 
-- če bi znala, narediti nek fiksen text čez zgenerirane slike (in animacije)
-	- napis teksta na voščilnico z uporabo chat gpt API?
-- javno dostopen url 
-- pošiljanje generiranih slik/animacij
+## CILJI:
+- izdelava preprostega vmesnika za izdelavo voščilnic
+- generacija voščilnic v .png in .gif formatih
+- izbira tipa voščilnic, možen vnos poljubnih parametrov, izbira stila 
+- pošiljanje voščilnic preko url/qr
 
+## OMEJITVE:
+- velikost .gif manjša od velikosti .png, ker smo omejeni na zmožnosti grafičnih
+- .gif max 2-3 sekunde, max 8fps
+
+## EXTRA
+- text prikaže čez zgenerirane .png slike 
+- implementacija text AI generatorja voščilnic, kjer se zgeneriran text prikaže ob 0odprtju' voščilnice 
+- učenje lastnega modela
+
+## ČASOVNICA PLANA DELA:
+- 03.12.23
+	- izdelan preprost vmesnik (A)
+- 10.12.23
+	- voice 2 text (L)
+	- checkpoint, VAE, lora modeli (A, L)
+- 15.12.23
+	- delujoč vmesnik za generiranje .png voščilnic
+- 31.12.23
+	- dodajanje možnosti animacij (A)
+	- javno dostopen url (L)
+	- pošiljanje voščilnic preko url/qr (L)
+- 12.01.24
+	- končana aplikacija (A,L)
+	- napisan seminar (A, L)
+- 19.01.23
