@@ -31,4 +31,4 @@
 - 12.01.24
 	- končana aplikacija (A,L)
 	- napisan seminar (A, L)
-- 19.01.23
+- 19.01.24
