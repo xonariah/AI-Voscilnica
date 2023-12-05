@@ -1,0 +1,52 @@
+{
+    "safetensors-metadata": {
+        "checkpoint/1_edgNendo_v2AnimePrunedfp16.safetensors": {
+            "mtime": 1692725674.887052,
+            "value": {}
+        }
+    },
+    "hashes": {
+        "checkpoint/1_edgNendo_v2AnimePrunedfp16.safetensors": {
+            "mtime": 1692725674.887052,
+            "sha256": "c026791d05137438e182546319faf680f2a102bc8b7498a81042ba33d7182820"
+        },
+        "textual_inversion/easynegative": {
+            "mtime": 1695996872.2686121,
+            "sha256": "c74b4e810b030f6b75fde959e2db678c268d07115b85356d3c0138ba5eb42340"
+        },
+        "textual_inversion/SimpleNegative_AnimeV1": {
+            "mtime": 1696505043.3014972,
+            "sha256": "4a65d1098ee42ad5a79424110d6425b16f08e1008bd34e382179a6afc80a374c"
+        },
+        "textual_inversion/verybadimagenegative_v1.3": {
+            "mtime": 1695996611.3995857,
+            "sha256": "d70463f87042e2b5951c303542f3e171cf49af9b7df53b2f20779493786eb143"
+        },
+        "vae": {
+            "mtime": 1680255845.7818458,
+            "sha256": "f921fb3f29891d2a77a6571e56b8b5052420d2884129517a333c60b1b4816cdf"
+        }
+    },
+    "extensions-git": {
+        "sd-webui-animatediff": {
+            "mtime": 1701783210.370705,
+            "value": {
+                "remote": "https://github.com/continue-revolution/sd-webui-animatediff",
+                "commit_date": 1701757956,
+                "branch": "master",
+                "commit_hash": "ca9819779ba0a2659c5bcbec709c8eeabc677f08",
+                "version": "ca981977"
+            }
+        },
+        "stable-diffusion-webui-Speech-To-Text-Prompter": {
+            "mtime": 1701783210.5156693,
+            "value": {
+                "remote": "https://github.com/jhj0517/stable-diffusion-webui-Speech-To-Text-Prompter",
+                "commit_date": 1678792822,
+                "branch": "master",
+                "commit_hash": "ead48d59e3d49503f73b98eee1c0c2e0128770aa",
+                "version": "ead48d59"
+            }
+        }
+    }
+}
