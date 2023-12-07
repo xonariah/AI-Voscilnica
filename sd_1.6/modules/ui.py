@@ -327,7 +327,6 @@ def create_ui():
 
     with gr.Blocks(analytics_enabled=False) as txt2img_interface:
         toprow = Toprow(is_img2img=False)
-
         dummy_component = gr.Label(visible=False)
 
         extra_tabs = gr.Tabs(elem_id="txt2img_extra_tabs")
@@ -365,7 +364,11 @@ def create_ui():
 
                     elif category == "accordions":
                         with gr.Row(elem_id="txt2img_accordions", elem_classes="accordions"):
-                            with InputAccordion(False, label="Hires. fix", elem_id="txt2img_hr") as enable_hr:
+
+                            hide_style = {"display": "none"}
+
+                            with InputAccordion(False, label="Hires. fix", elem_id="txt2img_hr", style=hide_style) as enable_hr:
+
                                 with enable_hr.extra():
                                     hr_final_resolution = FormHTML(value="", elem_id="txtimg_hr_finalres", label="Upscaled resolution", interactive=False, min_width=0)
 
@@ -384,6 +387,7 @@ def create_ui():
                                     hr_checkpoint_name = gr.Dropdown(label='Hires checkpoint', elem_id="hr_checkpoint", choices=["Use same checkpoint"] + modules.sd_models.checkpoint_tiles(use_short=True), value="Use same checkpoint")
                                     create_refresh_button(hr_checkpoint_name, modules.sd_models.list_models, lambda: {"choices": ["Use same checkpoint"] + modules.sd_models.checkpoint_tiles(use_short=True)}, "hr_checkpoint_refresh")
 
+
                                     hr_sampler_name = gr.Dropdown(label='Hires sampling method', elem_id="hr_sampler", choices=["Use same sampler"] + sd_samplers.visible_sampler_names(), value="Use same sampler")
 
                                 with FormRow(elem_id="txt2img_hires_fix_row4", variant="compact", visible=opts.hires_fix_show_prompts) as hr_prompts_container:
@@ -393,6 +397,7 @@ def create_ui():
                                     with gr.Column(scale=80):
                                         with gr.Row():
                                             hr_negative_prompt = gr.Textbox(label="Hires negative prompt", elem_id="hires_neg_prompt", show_label=False, lines=3, placeholder="Negative prompt for hires fix pass.\nLeave empty to use the same negative prompt as in first pass.", elem_classes=["prompt"])
+
 
                             scripts.scripts_txt2img.setup_ui_for_section(category)
 

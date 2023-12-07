@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/extensions/sd-webui-animatediff" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/extensions/sd-webui-auto-tweet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/extensions/sd-webui-lobe-theme" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/extensions/stable-diffusion-webui-Speech-To-Text-Prompter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/repositories/BLIP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/repositories/CodeFormer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/repositories/generative-models" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/repositories/k-diffusion" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sd_1.6/repositories/stable-diffusion-stability-ai" vcs="Git" />
+  </component>
+</project>
