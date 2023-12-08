@@ -1,5 +1,12 @@
 # AI Voščilnica
 
+## OKOLJE
+* Install Python 3.10.6
+	* (Newer version of Python does not support torch), checking "Add Python to PATH".
+* Install git.
+* Install https://ffmpeg.org/download.html
+ 	* After installing FFmpeg, make sure to add the FFmpeg/bin folder to your system PATH!
+    	* tutorial: https://phoenixnap.com/kb/ffmpeg-windows
 
 ## CILJI:
 - izdelava preprostega vmesnika za izdelavo voščilnic
