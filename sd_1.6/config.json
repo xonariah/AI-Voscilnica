@@ -231,7 +231,15 @@
     "postprocessing_enable_in_main_ui": [],
     "postprocessing_operation_order": [],
     "upscaling_max_images_in_cache": 5,
-    "disabled_extensions": [],
+    "disabled_extensions": [
+        "stable-diffusion-webui-Speech-To-Text-Prompter",
+        "ScuNET",
+        "SwinIR",
+        "canvas-zoom-and-pan",
+        "extra-options-section",
+        "mobile",
+        "prompt-bracket-checker"
+    ],
     "disable_all_extensions": "none",
     "restore_config_state_file": "",
     "sd_checkpoint_hash": "c026791d05137438e182546319faf680f2a102bc8b7498a81042ba33d7182820",

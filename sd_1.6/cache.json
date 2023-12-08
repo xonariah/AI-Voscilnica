@@ -29,7 +29,7 @@
     },
     "extensions-git": {
         "sd-webui-animatediff": {
-            "mtime": 1701783210.370705,
+            "mtime": 1701973296.733666,
             "value": {
                 "remote": "https://github.com/continue-revolution/sd-webui-animatediff",
                 "commit_date": 1701757956,
@@ -39,7 +39,7 @@
             }
         },
         "stable-diffusion-webui-Speech-To-Text-Prompter": {
-            "mtime": 1701783210.5156693,
+            "mtime": 1701973296.7595613,
             "value": {
                 "remote": "https://github.com/jhj0517/stable-diffusion-webui-Speech-To-Text-Prompter",
                 "commit_date": 1678792822,
@@ -66,6 +66,16 @@
                 "branch": "main",
                 "commit_hash": "d0cad5f9e349fba31c15f28f79e60864a40b4405",
                 "version": "d0cad5f9"
+            }
+        },
+        "sd-webui-whisper": {
+            "mtime": 1702055610.0435977,
+            "value": {
+                "remote": "https://github.com/152334H/sd-webui-whisper",
+                "commit_date": 1667751635,
+                "branch": "master",
+                "commit_hash": "656218274e5093ba8e29a1571f09f9c8644766d5",
+                "version": "65621827"
             }
         }
     }
