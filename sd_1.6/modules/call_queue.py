@@ -111,7 +111,7 @@ def wrap_gradio_call(func, extra_outputs=None, add_stats=False):
             vram_html = ''
 
         # last item is always HTML
-        res[-1] += f"<div class='performance'><p class='time'>Time taken: <wbr><span class='measurement'>{elapsed_text}</span></p>{vram_html}</div>"
+        res[-1] += f""
 
         return tuple(res)
 

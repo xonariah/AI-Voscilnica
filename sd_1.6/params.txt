@@ -1,3 +1,3 @@
-Blsj
-Negative prompt: (worst quality:2), (low quality:2), negative_hand-neg easynegative verybadimagenegative_v1.3, SimpleNegative_AnimeV1,
-Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 3712233715, Size: 650x450, Model hash: c026791d05, Model: 1_edgNendo_v2AnimePrunedfp16, VAE hash: f921fb3f29, VAE: orangemix.vae.pt, Version: 1.6.0
+., holiday, celebration, baptism, church, cross, dove, white, Christianity,
+Negative prompt: (nsfw:1.5), aidxlv05_neg, (worst quality:2), (low quality:2), negative_hand-neg easynegative verybadimagenegative_v1.3, SimpleNegative_AnimeV1,
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 379470038, Size: 650x450, Model hash: fe7578cb5e, Model: Realistični stil, VAE hash: f921fb3f29, VAE: orangemix.vae.pt, Version: 1.6.0

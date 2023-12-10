@@ -1,8 +1,8 @@
 {
     "txt2img/Prompt/visible": false,
-    "txt2img/Prompt/value": "",
+    "txt2img/Prompt/value": "beautiful, celebration, masterpiece, ",
     "txt2img/Negative prompt/visible": false,
-    "txt2img/Negative prompt/value": "(worst quality:2), (low quality:2), negative_hand-neg easynegative verybadimagenegative_v1.3, SimpleNegative_AnimeV1,",
+    "txt2img/Negative prompt/value": "(nsfw:1.5), aidxlv05_neg, (worst quality:2), (low quality:2), negative_hand-neg easynegative verybadimagenegative_v1.3, SimpleNegative_AnimeV1,",
     "txt2img/Interrupt/visible": true,
     "txt2img/Skip/visible": false,
     "txt2img/Generate/visible": true,

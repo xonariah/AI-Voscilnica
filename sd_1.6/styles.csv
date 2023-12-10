@@ -1,4 +1,11 @@
 ﻿name,prompt,negative_prompt
-Božič,"christmas, snow, holiday, winter",""
+Božič,"christmas, snow, holiday, winter, <lora:texta:1.3>",""
 Rojstni Dan,"birthday, happy birthday, cake, candles, holiday, celebration,",""
+Krst,"holiday, celebration, baptism, church, cross, dove, white, Christianity, ",""
+Zima,"Winter, white, snow, snowflake, ",""
+Poletje,"Summer, sea, beach, day, ",""
+Krst,"holiday, celebration, baptism, church, cross, dove, white, Christianity, ",""
+Krst,"holiday, celebration, baptism, church, cross, dove, white, Christianity, ",""
+Krst,"holiday, celebration, baptism, church, cross, dove, white, Christianity, ",""
+Krst,"holiday, celebration, baptism, church, cross, dove, white, Christianity, ",""
 Krst,"holiday, celebration, baptism, church, cross, dove, white, Christianity, ",""

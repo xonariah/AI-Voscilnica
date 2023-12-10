@@ -19,7 +19,7 @@ allowed_dirs = set()
 def register_page(page):
     """registers extra networks page for the UI; recommend doing it in on_before_ui() callback for extensions"""
 
-    extra_pages.append(page)
+    extra_pages
     allowed_dirs.clear()
     allowed_dirs.update(set(sum([x.allowed_directories_for_previews() for x in extra_pages], [])))
 
@@ -200,7 +200,6 @@ class ExtraNetworksPage:
         """
         Create HTML for card item in tab tabname; can return empty string if the item is not meant to be shown.
         """
-
         preview = item.get("preview", None)
 
         onclick = item.get("onclick", None)
@@ -346,9 +345,8 @@ def pages_in_preferred_order(pages):
     return sorted(pages, key=lambda x: tab_scores[x.name])
 
 
-def create_ui(interface: gr.Blocks, unrelated_tabs, tabname):
+def create_ui(interface: gr.Blocks(visible=False), unrelated_tabs, tabname):
     from modules.ui import switch_values_symbol
-
     ui = ExtraNetworksUi()
     ui.pages = []
     ui.pages_contents = []
@@ -357,13 +355,11 @@ def create_ui(interface: gr.Blocks, unrelated_tabs, tabname):
     ui.tabname = tabname
 
     related_tabs = []
-
     for page in ui.stored_extra_pages:
-        with gr.Tab(page.title, id=page.id_page) as tab:
+        with gr.Tab(page.title, id=page.id_page, visible=False) as tab:
             elem_id = f"{tabname}_{page.id_page}_cards_html"
-            page_elem = gr.HTML('Loading...', elem_id=elem_id)
+            page_elem = gr.HTML('Loading...', elem_id=elem_id, visible=False)
             ui.pages.append(page_elem)
-
             page_elem.change(fn=lambda: None, _js='function(){applyExtraNetworkFilter(' + quote_js(tabname) + '); return []}', inputs=[], outputs=[])
 
             editor = page.create_user_metadata_editor(ui, tabname)
@@ -385,7 +381,7 @@ def create_ui(interface: gr.Blocks, unrelated_tabs, tabname):
         tab.select(fn=lambda: [gr.update(visible=False) for _ in range(5)], inputs=[], outputs=[edit_search, dropdown_sort, button_sortorder, button_refresh, checkbox_show_dirs], show_progress=False)
 
     for tab in related_tabs:
-        tab.select(fn=lambda: [gr.update(visible=True) for _ in range(5)], inputs=[], outputs=[edit_search, dropdown_sort, button_sortorder, button_refresh, checkbox_show_dirs], show_progress=False)
+        tab.select(fn=lambda: [gr.update(visible=False) for _ in range(5)], inputs=[], outputs=[edit_search, dropdown_sort, button_sortorder, button_refresh, checkbox_show_dirs], show_progress=False)
 
     def pages_html():
         if not ui.pages_contents:

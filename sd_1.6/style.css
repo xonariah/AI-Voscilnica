@@ -23,6 +23,55 @@ div.gradio-image button[aria-label="Edit"] {
     padding: 0 !important;
 }
 
+
+/* skrijemo tab img 2 img in extensions */
+.ant-tabs .ant-tabs-tab[data-node-key="tab_img2img"] {
+    display: none;
+}
+.ant-tabs .ant-tabs-tab[data-node-key="tab_extensions"] {
+    display: none;
+}
+
+#sampler_selection_txt2img {
+    display: none;
+}
+
+#component-97 {
+    display: none;
+}
+
+#component-109 {
+    display: none;
+}
+#txt2img_seed_row {
+    display: none;
+}
+#refresh_sd_model_checkpoint {
+    display: none;
+}
+.acss-1kgysqs {
+    display: none;
+}
+.acss-p1wbmo {
+    display: none;
+}
+
+.form.svelte-sfqy0y > div#component-137 {
+    display: none;
+}
+
+
+
+div[data-testid="block-label"].svelte-1mwvhlq {
+    display: none;
+}
+div.thumbnails.scroll-hide.svelte-1b19cri[data-testid="container_el"] {
+    display: none;
+}
+
+
+
+
 div.gradio-container{
     max-width: unset !important;
 }

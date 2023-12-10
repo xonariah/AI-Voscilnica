@@ -230,9 +230,9 @@ class Toprow:
                         inputs=[self.prompt, self.negative_prompt],
                         outputs=[self.prompt, self.negative_prompt],
                     )
-
+                gr.Markdown("Izberi tip voščilnice")
                 self.ui_styles = ui_prompt_styles.UiPromptStyles(id_part, self.prompt, self.negative_prompt)
-
+                #gr.Markdown("hello")
         self.prompt_img.change(
             fn=modules.images.image_data,
             inputs=[self.prompt_img],
@@ -317,14 +317,11 @@ def create_override_settings_dropdown(tabname, row):
 def create_ui():
     import modules.img2img
     import modules.txt2img
-
     reload_javascript()
 
     parameters_copypaste.reset()
-
     scripts.scripts_current = scripts.scripts_txt2img
     scripts.scripts_txt2img.initialize_scripts(is_img2img=False)
-
     with gr.Blocks(analytics_enabled=False) as txt2img_interface:
         toprow = Toprow(is_img2img=False)
         dummy_component = gr.Label(visible=False)
@@ -363,11 +360,11 @@ def create_ui():
                             pass
 
                     elif category == "accordions":
-                        with gr.Row(elem_id="txt2img_accordions", elem_classes="accordions"):
+                        with gr.Row(elem_id="txt2img_accordions", elem_classes="accordions", visible=False):
 
                             hide_style = {"display": "none"}
 
-                            with InputAccordion(False, label="Hires. fix", elem_id="txt2img_hr", style=hide_style) as enable_hr:
+                            with InputAccordion(False, label="Hires. fix", elem_id="txt2img_hr", style=hide_style, visible=False) as enable_hr:
 
                                 with enable_hr.extra():
                                     hr_final_resolution = FormHTML(value="", elem_id="txtimg_hr_finalres", label="Upscaled resolution", interactive=False, min_width=0)
@@ -572,10 +569,10 @@ def create_ui():
                             button = gr.Button(title)
                             copy_image_buttons.append((button, name, elem))
 
-                with gr.Tabs(elem_id="mode_img2img"):
+                with gr.Tabs(elem_id="mode_img2img", visible=False):
                     img2img_selected_tab = gr.State(0)
 
-                    with gr.TabItem('img2img', id='img2img', elem_id="img2img_img2img_tab") as tab_img2img:
+                    with gr.TabItem('img2img', id='img2img', elem_id="img2img_img2img_tab", visible=False) as tab_img2img:
                         init_img = gr.Image(label="Image for img2img", elem_id="img2img_image", show_label=False, source="upload", interactive=True, type="pil", tool="editor", image_mode="RGBA", height=opts.img2img_editor_height)
                         add_copy_image_controls('img2img', init_img)
 
@@ -1269,8 +1266,9 @@ def create_ui():
     for _interface, label, _ifid in interfaces:
         shared.tab_names.append(label)
 
-    with gr.Blocks(theme=shared.gradio_theme, analytics_enabled=False, title="Stable Diffusion") as demo:
+    with gr.Blocks(theme=shared.gradio_theme, analytics_enabled=False, title="AI-Voščilnica") as demo:
         settings.add_quicksettings()
+
 
         parameters_copypaste.connect_paste_params_buttons()
 

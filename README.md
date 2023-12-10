@@ -1,6 +1,7 @@
 # AI Voščilnica
 
 ## OKOLJE
+* change python path in webui-user.bat
 * Install Python 3.10.6
 	* (Newer version of Python does not support torch), checking "Add Python to PATH".
 * Install git.
