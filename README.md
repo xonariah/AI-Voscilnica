@@ -27,12 +27,12 @@
 
 ## ČASOVNICA PLANA DELA:
 - 03.12.23
-	- izdelan preprost vmesnik (A)
+	- izdelan preprost vmesnik (A) ✅
 - 10.12.23
-	- voice 2 text (L)
-	- checkpoint, VAE, lora modeli (A, L)
+	- voice 2 text (L) ✅
+	- checkpoint, VAE, lora modeli (A, L) ✅
 - 15.12.23
-	- delujoč vmesnik za generiranje .png voščilnic
+	- delujoč vmesnik za generiranje .png voščilnic ✅
 - 31.12.23
 	- dodajanje možnosti animacij (A)
 	- javno dostopen url (L)
