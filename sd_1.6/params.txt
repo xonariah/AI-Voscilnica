@@ -1,3 +1,3 @@
-., holiday, celebration, baptism, church, cross, dove, white, Christianity,
-Negative prompt: (nsfw:1.5), aidxlv05_neg, (worst quality:2), (low quality:2), negative_hand-neg easynegative verybadimagenegative_v1.3, SimpleNegative_AnimeV1,
-Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 379470038, Size: 650x450, Model hash: fe7578cb5e, Model: Realistični stil, VAE hash: f921fb3f29, VAE: orangemix.vae.pt, Version: 1.6.0
+beautiful, celebration, masterpiece,, WORDS  EASTER DAY, <lora:texta:1.3>, colorful background, simple background, pattern, eggs, easter, bunny, business aesthetic, muted colors,, minimalistic:1.4, simple, minimalistic design, simple,
+Negative prompt: (nsfw:1.5), aidxlv05_neg, (worst quality:2), (low quality:2), negative_hand-neg easynegative verybadimagenegative_v1.3, SimpleNegative_AnimeV1,, colorful:1.5
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 1811280817, Size: 450x650, Model hash: fe7578cb5e, Model: Realistični stil, Lora hashes: "texta: 11edce6ef2b4", Version: 1.6.0

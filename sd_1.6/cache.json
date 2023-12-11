@@ -412,6 +412,10 @@
         "checkpoint/Realisti\u010dni stil.safetensors": {
             "mtime": 1702243993.0834277,
             "value": {}
+        },
+        "checkpoint/Z besedilom.safetensors": {
+            "mtime": 1702238263.1454525,
+            "value": {}
         }
     },
     "hashes": {
@@ -432,8 +436,8 @@
             "sha256": "d70463f87042e2b5951c303542f3e171cf49af9b7df53b2f20779493786eb143"
         },
         "vae": {
-            "mtime": 1680255845.7818458,
-            "sha256": "f921fb3f29891d2a77a6571e56b8b5052420d2884129517a333c60b1b4816cdf"
+            "mtime": 1702240001.1295834,
+            "sha256": "63aeecb90ff7bc1c115395962d3e803571385b61938377bc7089b36e81e92e2e"
         },
         "textual_inversion/aidxlv05_neg": {
             "mtime": 1702235777.2240336,
@@ -454,11 +458,15 @@
         "checkpoint/Realisti\u010dni stil.safetensors": {
             "mtime": 1702243993.0834277,
             "sha256": "fe7578cb5ee0be63aa15baa894ab5d1751ff9b5b25ef611d5fafb2186d930c30"
+        },
+        "checkpoint/Z besedilom.safetensors": {
+            "mtime": 1702238263.1454525,
+            "sha256": "59855d992be735ae8333dbead7c607e889b7083e89b31bbe5c3ffdc2fb48724f"
         }
     },
     "extensions-git": {
         "sd-webui-animatediff": {
-            "mtime": 1702059184.673923,
+            "mtime": 1702246911.8054924,
             "value": {
                 "remote": "https://github.com/continue-revolution/sd-webui-animatediff",
                 "commit_date": 1701757956,
@@ -468,7 +476,7 @@
             }
         },
         "stable-diffusion-webui-Speech-To-Text-Prompter": {
-            "mtime": 1702059184.8010998,
+            "mtime": 1702246911.8826602,
             "value": {
                 "remote": "https://github.com/jhj0517/stable-diffusion-webui-Speech-To-Text-Prompter",
                 "commit_date": 1678792822,
@@ -478,7 +486,7 @@
             }
         },
         "sd-webui-auto-tweet": {
-            "mtime": 1702059184.6929224,
+            "mtime": 1702246911.823524,
             "value": {
                 "remote": "https://github.com/sinano1107/sd-webui-auto-tweet",
                 "commit_date": 1692170835,
@@ -488,7 +496,7 @@
             }
         },
         "sd-webui-lobe-theme": {
-            "mtime": 1702244244.2639518,
+            "mtime": 1702246911.8469644,
             "value": {
                 "remote": "https://github.com/lobehub/sd-webui-lobe-theme",
                 "commit_date": 1701868638,
@@ -498,7 +506,7 @@
             }
         },
         "sd-webui-whisper": {
-            "mtime": 1702055610.0435977,
+            "mtime": 1702246911.8660142,
             "value": {
                 "remote": "https://github.com/152334H/sd-webui-whisper",
                 "commit_date": 1667751635,

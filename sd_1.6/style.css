@@ -60,6 +60,18 @@ div.gradio-image button[aria-label="Edit"] {
     display: none;
 }
 
+#component-2537 {
+    display: none;
+}
+
+#component-2549 {
+    display: none;
+}
+
+/*skrijemo vrstico ukazno*/
+.ant-tabs.ant-tabs-top.acss-16fbat1.css-1lyoh5z {
+    display: none;
+}
 
 
 div[data-testid="block-label"].svelte-1mwvhlq {
